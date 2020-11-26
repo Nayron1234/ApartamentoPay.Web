@@ -1,0 +1,26 @@
+
+  
+  .sidenav {
+    text-align: center;
+    width:1238px;
+   background-color:   #2e353d;
+    height: auto;
+    overflow-x: hidden;
+ height: auto;
+    top: 0;
+    left: 0
+  }
+  
+  
+  .img {
+    padding: 173px 450px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 30px;}
+  }
+  
+
+  
+  
+ 

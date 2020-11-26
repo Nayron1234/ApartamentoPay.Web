@@ -1,0 +1,83 @@
+
+<div class="main">
+  <div class="residents-form">
+    <div class="col-md-12 col-sm-3">
+      <form>
+        <div class="form-group">
+          <h1 style=" text-align: center">Controle de pagamento</h1>
+          <br>
+          <div class="form-row">
+
+            <div class="form-group col-md-6">
+              <!---Field CPF--->
+              <div class="form-group">
+                <label for="inputCPF">CPF </label>
+                <input type="CPF" id="inputCPF"
+                       name="CPF"
+                       class="form-control"
+                       #nome="ngModel"
+                       placeholder="Informe o seu CPF"
+                       [(ngModel)]="xxx.xxx.xxx-xx"
+                       CPF
+                       required>
+                <div class="invalid-feedback mb-2">
+                  <div *ngIf=" ">
+                    Por favor informe seu CPF
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group col-md-2">
+              <div class="apart">
+                <button class="btn btn-primary" (click)="incrementResidents()">Pesquisar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+
+
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col"> </th>
+            <th scope="col">Nome</th>
+            <th scope="col">CPF</th>
+            <th scope="col">Mês</th>
+            <th scope="col">Status</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Pedro</td>
+            <td>888.555.666-88</td>
+            <td>Janeiro</td>
+            <td>Pago</td>
+
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Pedro</td>
+            <td>888.555.666-88</td>
+            <td>Fevereiro</td>
+            <td>Pago</td>
+
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Pedro</td>
+            <td>888.555.666-88</td>
+            <td>Março </td>
+            <td>Aberto</td>
+
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+    </div>
+  </div>

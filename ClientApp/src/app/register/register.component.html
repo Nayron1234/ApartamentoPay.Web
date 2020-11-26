@@ -1,0 +1,129 @@
+
+<div class="main">
+  <div class="apartment-form">
+
+    <form>
+      <div class="form-group">
+        <h1 style=" text-align: center">Cadastrar morador</h1>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <!---Field Block -->
+            <label for="inputBlock">Bloco </label>
+            <input class="form-control" id="inputBlock"
+                   name="Block"
+                   #nome="ngModel"
+                   placeholder="Bloco"
+                   [(ngModel)]="Apartamento.Block"
+                   Block
+                   required>
+            <div class="invalid-feedback mb-2">
+              <div *ngIf=" ">
+                Por favor informe o Bloco
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <!---Field Floor-->
+
+            <label for="inputFloor">Andar </label>
+            <input class="form-control" id="inputFloor"
+                   name="Floor"
+                   #nome="ngModel"
+                   placeholder="Andar"
+                   [(ngModel)]="Apartamento.Floor"
+                   Floor
+                   required>
+            <div class="invalid-feedback mb-2">
+              <div *ngIf=" ">
+                Por favor informe o Andar
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <!---Field  Numberap-->
+            <div class="has-success">
+              <label for="inputNumberap">Numero </label>
+              <input class="form-control" id="inputNumberap"
+                     name="Numberap"
+                     #nome="ngModel"
+                     placeholder="Numero"
+                     [(ngModel)]="Apartamento.Number"
+                     Numberap
+                     required>
+              <div class="invalid-feedback mb-2">
+                <div *ngIf=" ">
+                  Por favor informe o numero do Apartamento
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+
+              <!---Field Nome--->
+
+              <label for="inputNome">Nome </label>
+              <input type="Nome" id="inputNome"
+                     name="Nome"
+                     class="form-control"
+                     #nome="ngModel"
+                     placeholder="Informe o seu Nome"
+                     [(ngModel)]="xxx.xxx.xxx-xx"
+                     Nome
+                     required>
+              <div class="invalid-feedback mb-2">
+                <div *ngIf=" ">
+                  Por favor informe seu Nome
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <!---Field CPF--->
+
+              <label for="inputCPF">CPF </label>
+              <input type="CPF" id="inputCPF"
+                     name="CPF"
+                     class="form-control"
+                     #nome="ngModel"
+                     placeholder="Informe o seu CPF"
+                     [(ngModel)]="xxx.xxx.xxx-xx"
+                     CPF
+                     required>
+              <div class="invalid-feedback mb-2">
+                <div *ngIf=" ">
+                  Por favor informe seu CPF
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-group col-md-3">
+              <div class="apart">
+                <button class="btn btn-primary" (click)="incrementApartment()">Cadastrar</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </form>
+
+
+
+
+  </div>
+</div>
+

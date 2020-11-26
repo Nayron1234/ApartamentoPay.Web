@@ -1,0 +1,77 @@
+<header>
+<nav *ngIf="!usuarioLogado()">
+
+  <div class="nav-side-menu">
+  
+          <div class="menu-list">
+    
+              <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                <a class="navbar-brand" [routerLink]="['/start']"><img src="assets/img/logo.jpeg"  
+                  id="size" alt="" class="app-logo" /></a>
+                 <!--- <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  aria-label="Toggle navigation"
+                  [attr.aria-expanded]="isExpanded"
+                  (click)="toggle()"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>-->
+                <div
+                  class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+                  [ngClass]="{ show: isExpanded }"
+                ></div>
+                </li>
+                <li class="nav-item " [routerLinkActive]="['link-active']">
+                  <a class="nav-link " [routerLink]="['/start']"
+                    ><i >Pagina inicial</i></a
+                  > 
+                </li>
+              
+                
+                  <li class="nav-item " [routerLinkActive]="['link-active']">
+                    <a class="nav-link " [routerLink]="['/apartamento']"
+                      ><i >Cadastro de apartamento </i></a
+                    >
+              
+                  </li>
+  
+                  <li class="nav-item" [routerLinkActive]="['link-active']">
+                    <a class="nav-link " [routerLink]="['/residents']"
+                      > <i >Moradores </i></a
+                    >
+                  </li>
+  
+                  <li class="nav-item" [routerLinkActive]="['link-active']">
+                    <a class="nav-link " [routerLink]="['/rent-apartment']"
+                      > <i >Alugar apartamento</i></a
+                    >
+                  </li>
+  
+                  
+                  <li class="nav-item" [routerLinkActive]="['link-active']">
+                    <a class="nav-link " [routerLink]="['/paid-out']">
+                     <i>Recebimento</i></a>
+                  </li>
+  
+                
+   
+                  <li class="nav-item" [routerLinkActive]="['link-active']" >
+                    <a class="nav-link" [routerLink]='["/sair"]' (click)="sair()"><i>Sair</i>
+                      </a>
+                    </li> 
+  
+                  <li class="nav-item dropdown" *ngIf="usuarioLogado()">
+                    <a class="nav-link" role="button" aria-haspopup="true" href="#"
+                     aria-expanded="false">{{usuario.nome}}</a>
+                  </li>
+               
+                  
+              </ul>
+       </div>
+  </div>
+  </nav>
+</header>

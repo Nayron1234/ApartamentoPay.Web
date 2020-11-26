@@ -1,0 +1,74 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+.main {
+  width: auto;
+  height: auto;
+  padding: 10px 0px 0px 0px;
+  margin-left: 30%; 
+}
+
+.apartment-form{
+  margin-top: 0%;
+}
+
+.apart{
+padding: 32px 0px 0px 0px;
+}
+@media screen and (max-width: 990px){
+  .main{
+    width: auto;
+      margin-left: 30%; 
+      background-color: blue;
+  }
+}
+
+  @media screen and (max-width: 870px){
+    .main{
+      width: auto;
+        margin-left: 40%; 
+        background-color: rgb(21, 255, 0);
+    }
+
+    .apartment-form{
+        margin-top: 10%;
+    }
+
+} 
+
+@media screen and (max-width: 700px) {
+
+  .main{
+    width: 100%;
+    margin-left: 0%; 
+    background-color: tan;
+}
+
+
+  .apartment-form{
+      margin-top: 10%;
+  }
+}
+  @media screen and (max-width: 550px) {
+
+    .main{
+      width: 100%;
+      margin-left: 0%; 
+      background-color: rgb(204, 21, 21);
+  }
+
+
+    .apartment-form{
+        margin-top: 10%;
+    }
+
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+
+
+
+
+
